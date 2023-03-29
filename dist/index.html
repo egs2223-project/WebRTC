@@ -1,0 +1,117 @@
+<head><script defer src="main.js"></script></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module build failed (from ./node_modules/template-ejs-loader/lib/index.js):
+  ReferenceError: /home/saldanha/Desktop/webRTC/Service/src/views/room.ejs:8
+      6|   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      7|   <script>
+   >> 8|     const ROOM_ID = "<%= roomId %>"
+      9|   </script>
+      10|   <script defer src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"></script>
+      11|   <script src="/socket.io/socket.io.js" defer></script>
+  
+  roomId is not defined
+      at eval ("/home/saldanha/Desktop/webRTC/Service/src/views/room.ejs":12:26)
+      at room (/home/saldanha/Desktop/webRTC/Service/node_modules/ejs/lib/ejs.js:703:17)
+      at Object.ejsLoader (/home/saldanha/Desktop/webRTC/Service/node_modules/template-ejs-loader/lib/inde  x.js:104:78)
+  ModuleBuildError: Module build failed (from ./node_modules/template-ejs-loader/lib/index.js):
+  ReferenceError: /home/saldanha/Desktop/webRTC/Service/src/views/room.ejs:8
+      6|   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      7|   <script>
+   >> 8|     const ROOM_ID = "<%= roomId %>"
+      9|   </script>
+      10|   <script defer src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"></script>
+      11|   <script src="/socket.io/socket.io.js" defer></script>
+  
+  roomId is not defined
+      at eval ("/home/saldanha/Desktop/webRTC/Service/src/views/room.ejs":12:26)
+      at room (/home/saldanha/Desktop/webRTC/Service/node_modules/ejs/lib/ejs.js:703:17)
+      at Object.ejsLoader (/home/saldanha/Desktop/webRTC/Service/node_modules/template-ejs-loader/lib/inde  x.js:104:78)
+      at processResult (/home/saldanha/Desktop/webRTC/Service/node_modules/webpack/lib/NormalModule.js:760  :19)
+      at /home/saldanha/Desktop/webRTC/Service/node_modules/webpack/lib/NormalModule.js:862:5
+      at /home/saldanha/Desktop/webRTC/Service/node_modules/loader-runner/lib/LoaderRunner.js:400:11
+      at /home/saldanha/Desktop/webRTC/Service/node_modules/loader-runner/lib/LoaderRunner.js:252:18
+      at context.callback (/home/saldanha/Desktop/webRTC/Service/node_modules/loader-runner/lib/LoaderRunn  er.js:124:13)
+      at Object.ejsLoader (/home/saldanha/Desktop/webRTC/Service/node_modules/template-ejs-loader/lib/inde  x.js:108:9)
+  
+  - room.ejs":12 eval
+    "/home/saldanha/Desktop/webRTC/Service/src/views/room.ejs":12:26
+  
+  - ejs.js:703 room
+    [Service]/[ejs]/lib/ejs.js:703:17
+  
+  - index.js:104 Object.ejsLoader
+    [Service]/[template-ejs-loader]/lib/index.js:104:78
+  
+  - ModuleBuildError: Module build failed (from ./node_modules/template-ejs-loader/lib/index.js):
+  
+  - ReferenceError: /home/saldanha/Desktop/webRTC/Service/src/views/room.ejs:8
+  
+  - 6|   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  - 7|   <script>
+  
+  - >> 8|     const ROOM_ID = "<%= roomId %>"
+  
+  - 9|   </script>
+  
+  - 10|   <script defer src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"></script>
+  
+  - 11|   <script src="/socket.io/socket.io.js" defer></script>
+  
+  - roomId is not defined
+  
+  - room.ejs":12 eval
+    "/home/saldanha/Desktop/webRTC/Service/src/views/room.ejs":12:26
+  
+  - ejs.js:703 room
+    [Service]/[ejs]/lib/ejs.js:703:17
+  
+  - index.js:104 Object.ejsLoader
+    [Service]/[template-ejs-loader]/lib/index.js:104:78
+  
+  - NormalModule.js:760 processResult
+    [Service]/[webpack]/lib/NormalModule.js:760:19
+  
+  - NormalModule.js:862 
+    [Service]/[webpack]/lib/NormalModule.js:862:5
+  
+  - LoaderRunner.js:400 
+    [Service]/[loader-runner]/lib/LoaderRunner.js:400:11
+  
+  - LoaderRunner.js:252 
+    [Service]/[loader-runner]/lib/LoaderRunner.js:252:18
+  
+  - LoaderRunner.js:124 context.callback
+    [Service]/[loader-runner]/lib/LoaderRunner.js:124:13
+  
+  - index.js:108 Object.ejsLoader
+    [Service]/[template-ejs-loader]/lib/index.js:108:9
+  
+  - child-compiler.js:169 
+    [Service]/[html-webpack-plugin]/lib/child-compiler.js:169:18
+  
+  - Compiler.js:551 finalCallback
+    [Service]/[webpack]/lib/Compiler.js:551:5
+  
+  - Compiler.js:577 
+    [Service]/[webpack]/lib/Compiler.js:577:11
+  
+  - Compiler.js:1196 
+    [Service]/[webpack]/lib/Compiler.js:1196:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [Service]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1192 
+    [Service]/[webpack]/lib/Compiler.js:1192:33
+  
+  - Compilation.js:2787 finalCallback
+    [Service]/[webpack]/lib/Compilation.js:2787:11
+  
+  - Compilation.js:3092 
+    [Service]/[webpack]/lib/Compilation.js:3092:11
+  
+  
+</pre>
