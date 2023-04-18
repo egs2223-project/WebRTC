@@ -27,5 +27,6 @@
 </head>
 <body>
   <div id="video-grid"></div>
+  <script>(()=>{const e=io("/"),o=document.getElementById("video-grid"),n=new Peer(void 0,{host:"/",port:"3001"}),t=document.createElement("video");t.muted=!0;const d={};function c(e,n){e.srcObject=n,e.addEventListener("loadedmetadata",(()=>{e.play()})),o.append(e)}navigator.mediaDevices.getUserMedia({video:!0,audio:!0}).then((o=>{c(t,o),n.on("call",(e=>{e.answer(o);const n=document.createElement("video");e.on("stream",(e=>{c(n,e)}))})),e.on("user-connected",(e=>{!function(e,o){const t=n.call(e,o),a=document.createElement("video");t.on("stream",(e=>{c(a,e)})),t.on("close",(()=>{a.remove()})),d[e]=t}(e,o)}))})),e.on("user-disconnected",(e=>{d[e]&&d[e].close()})),n.on("open",(o=>{e.emit("join-room",ROOM_ID,o)}))})();</script>
 </body>
 </html>
