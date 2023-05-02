@@ -1,4 +1,4 @@
 FROM node:alpine
 COPY . /src
-WORKDIR /src
+WORKDIR /
 CMD node ./src/server.js
