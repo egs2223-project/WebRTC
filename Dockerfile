@@ -1,5 +1,4 @@
 FROM node:alpine
-COPY . /
+COPY WebRTC/ /
 WORKDIR /
-EXPOSE 3300
 CMD node ./src/server.js

@@ -41,7 +41,7 @@ io.on('connection', socket => {
 
 
 
-server.listen(3300, ()=>console.log("app is running"));
+server.listen(3300, '0.0.0.0', ()=>console.log("app is running"));
 
 
 function generateVideoCallID(){ // Id generator 
